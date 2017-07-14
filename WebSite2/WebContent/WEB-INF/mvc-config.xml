@@ -46,9 +46,9 @@
      	<property name="dataSource" ref="dataSource"></property>
      </bean>
      
-     <bean id="accountDao" class="website.dao.impl.AccountDaoImpl">
-         <property name="jdbcTemplate" ref="jdbcTemplate"></property>
-     </bean>
+<!--      <bean id="accountDao" class="website.dao.impl.AccountDaoImpl"> -->
+<!--          <property name="jdbcTemplate" ref="jdbcTemplate"></property> -->
+<!--      </bean> -->
      
 
 	<!--Resource -->

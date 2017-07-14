@@ -19,6 +19,7 @@ import website.model.AccountModel;
 @Controller
 public class LoginController {
 	
+	@Resource(name = "accountModel")
 	private AccountModel accountModel;
 	
     private static final String accountRex = "^[A-Za-z][\\w\\.]{5,11}$"; //英文開頭、後面接英文/數字/_(6~12)
@@ -26,10 +27,10 @@ public class LoginController {
     private static final String phoneRex = "^09[0-9]{8}$"; 			//09xxxxxxxx(10)
     private static final String nameRex = "^[A-Za-z\\u4e00-\\u9fa5]{2,10}$"; //英文/中文(2~10)
 	
-	@Resource(name = "accountModel")
-	public void setAccountModel(AccountModel accountModel) {
-		this.accountModel = accountModel;
-	}
+//	@Resource(name = "accountModel")
+//	public void setAccountModel(AccountModel accountModel) {
+//		this.accountModel = accountModel;
+//	}
 
 	// 處理登入動作
 	@RequestMapping("/login.do")
